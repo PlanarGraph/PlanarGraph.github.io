@@ -1,56 +1,108 @@
+/*@import "base.css";*/
+
+/* fonts */
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+     /* to allow the #footer to be properly positioned
+    at the bottom, even when #content is longer than
+    the viewport high */
+    min-height: 100%;
+    position: relative;
+    background-color: #262626;
+}
+
 body {
-    color: black;
+    color: #262626;
     font-size: 16px;
     margin: 0px auto 0px auto;
-    width: 600px;
+    background-color: #262626;
 }
 
-div#header {
-    border-bottom: 2px solid black;
-    margin-bottom: 30px;
-    padding: 12px 0px 12px 0px;
+/* 19111f - 2c1e37 */
+header {
+    margin-bottom: 0px;
+    padding: 50px;
+    background: linear-gradient(to right,#262626 0%,#ffe36e 100%);
 }
 
-div#logo a {
-    color: black;
+div.logo a {
+    color: #ffbe55;
     float: left;
-    font-size: 18px;
+    font-family: Ubuntu, 'Open Sans', sans-serif;
+    font-size: 28px;
     font-weight: bold;
     text-decoration: none;
 }
 
-div#header #navigation {
+header nav {
     text-align: right;
 }
 
-div#header #navigation a {
-    color: black;
-    font-size: 18px;
+header nav a {
+    color: #262626!important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     font-weight: bold;
     margin-left: 12px;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-div#footer {
-    border-top: solid 2px black;
-    color: #555;
+header nav a:hover{
+  color: #FFFFFF;
+}
+
+main {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 5.5rem; /* footer-height + 1.5rem */
+  background-color: #262626;
+}
+
+main h1{
+  color: #ffbe55;
+  font-size: 36px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main, /* this line for archives page */
+main p{
+    color: #ffcb83;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: #262626;
+}
+
+main a{
+  color: #f79500;
+  text-decoration: none;
+}
+
+footer {
+    color: #999999;
     font-size: 12px;
-    margin-top: 30px;
-    padding: 12px 0px 12px 0px;
-    text-align: right;
+    text-align: center;
+    height: 4em;
+    background-color: #323232;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 1em;
+    font-family: 'Open Sans', sans-serif;
 }
 
-h1 {
-    font-size: 24px;
+footer a {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-h2 {
-    font-size: 20px;
-}
-
-div.info {
+section.header {
     color: #555;
     font-size: 14px;
     font-style: italic;
 }
+
