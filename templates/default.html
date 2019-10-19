@@ -9,7 +9,19 @@
         <meta name="author" content="@PlanarGraph" />
         <meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate" />
         <title>PlanarGraph - $title$</title>
-        <link rel="stylesheet" type="text/css" title="hakyll_theme" href="/css/default.css" />
+
+        <script>
+            function setStyleSheet(light) {
+                var stylesheet = document.getElementById("stylesheet");
+                var url = "css/dark.css";
+                if(light) {
+                    url = "css/default.css";
+                }
+                stylesheet.setAttribute('href', url);
+            }
+        </script>
+
+        <link id="stylesheet" rel="stylesheet" type="text/css" title="hakyll_theme" href="/css/dark.css" />
     </head>
     <body>
 
@@ -35,6 +47,8 @@
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>,
             modified theme from
             <a href="http://katychuang.com/hakyll-cssgarden/gallery/">here</a>
+            <p><a onclick="setStyleSheet(true)" href="#">Light Theme</a>
+            | <a onclick="setStyleSheet(false)" href="#">Dark Theme</a></p>
         </footer>
     </body>
 </html>

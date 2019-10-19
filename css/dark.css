@@ -10,25 +10,25 @@ html {
     the viewport high */
     min-height: 100%;
     position: relative;
-    background-color: #F6F6F6;
+    background-color: #262626;
 }
 
 body {
-    /*color: #262626;*/
+    color: #262626;
     font-size: 16px;
     margin: 0px auto 0px auto;
-    /*background-color: #F6F6F6;*/
+    /*background-color: #262626;*/
 }
 
 /* 19111f - 2c1e37 */
 header {
     margin-bottom: 0px;
     padding: 50px;
-    background: linear-gradient(to right,#262626 0%,#009B7D 100%);
+    background: linear-gradient(to right,#262626 0%,#ffe36e 100%);
 }
 
 div.logo a {
-    color: #F6F6F6;
+    color: #ffbe55;
     float: left;
     font-family: Ubuntu, 'Open Sans', sans-serif;
     font-size: 28px;
@@ -41,7 +41,7 @@ header nav {
 }
 
 header nav a {
-    color: #F6F6F6!important;
+    color: #262626!important;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -58,25 +58,25 @@ main {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 5.5rem; /* footer-height + 1.5rem */
-  /*background-color: #F6F6F6;*/
+  /*background-color: #262626;*/
 }
 
 main h1{
-  color: #319177;
+  color: #ffbe55;
   font-size: 36px;
   font-family: 'Open Sans', sans-serif;
 }
 
 main, /* this line for archives page */
 main p{
-    /*color: #000000;*/
+    color: #ffcb83;
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
-    /*background-color: #F6F6F6;*/
+    /*background-color: #262626*/;
 }
 
 main a{
-  color: #319177;
+  color: #f79500;
   text-decoration: none;
 }
 
