@@ -78,6 +78,7 @@ main p{
 main a{
   color: #319177;
   text-decoration: none;
+  font-weight: bold;
 }
 
 footer {

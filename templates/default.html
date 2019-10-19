@@ -14,7 +14,7 @@
             function setStyleSheet(light) {
                 var stylesheet = document.getElementById("stylesheet");
                 var url = "css/dark.css";
-                if(light) {
+                if(typeof light === 'boolean' && light) {
                     url = "css/default.css";
                 }
                 stylesheet.setAttribute('href', url);
