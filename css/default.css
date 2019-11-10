@@ -67,6 +67,10 @@ main h1{
   font-family: 'Open Sans', sans-serif;
 }
 
+main h2 {
+  color: #319177;
+}
+
 main, /* this line for archives page */
 main p{
     /*color: #000000;*/
