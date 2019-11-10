@@ -28,13 +28,13 @@
 
             function getStyleSheet() {
                 var stylesheet = document.getElementById("stylesheet");
-                var url = "css/dark.css";
+                var url = "/css/dark.css";
                 var style = getCookie("style");
 
                 if(style === "" || style === "dark") {
-                    url = "css/dark.css";
+                    url = "/css/dark.css";
                 } else if (style === "light") {
-                    url = "css/default.css";
+                    url = "/css/default.css";
                 }
                 stylesheet.setAttribute('href', url);
             }
