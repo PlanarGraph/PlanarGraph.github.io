@@ -10,37 +10,7 @@
         <meta http-equiv="Cache-Control" content="max-age=86400, must-revalidate" />
         <title>PlanarGraph - $title$</title>
 
-        <script>
-            function getCookie(name) {
-                var match = document.cookie.match(new RegExp('(^| )' + name + '=([^;]+)'));
-                if (match) { return match[2]; }
-                else { return ""; }
-            }
-
-            function setStyleSheet(style) {
-                if(style === false) {
-                    document.cookie = "style=dark";
-                } else  {
-                    document.cookie = "style=light";
-                }
-                getStyleSheet();
-            }
-
-            function getStyleSheet() {
-                var stylesheet = document.getElementById("stylesheet");
-                var url = "/css/dark.css";
-                var style = getCookie("style");
-
-                if(style === "" || style === "dark") {
-                    url = "/css/dark.css";
-                } else if (style === "light") {
-                    url = "/css/default.css";
-                }
-                stylesheet.setAttribute('href', url);
-            }
-        </script>
-
-        <link id="stylesheet" rel="stylesheet" type="text/css" title="hakyll_theme" href="/css/dark.css" />
+        <link id="stylesheet" rel="stylesheet" type="text/css" title="hakyll_theme" href="/css/default.css" />
     </head>
     <body onLoad="getStyleSheet();">
 
@@ -66,8 +36,6 @@
             <a href="http://jaspervdj.be/hakyll">Hakyll</a>,
             modified theme from
             <a href="http://katychuang.com/hakyll-cssgarden/gallery/">here</a>
-            <p><a onclick="setStyleSheet(true)" href="#">Light Theme</a>
-            | <a onclick="setStyleSheet(false)" href="#">Dark Theme</a></p>
         </footer>
     </body>
 </html>
